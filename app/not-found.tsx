@@ -9,7 +9,7 @@ export default function NotFound() {
       <div className="flex flex-col items-center justify-center h-screen">
         <p
           className="text-center text-8xl text-transparent bg-clip-text bg-gradient-to-tr from-orange-500 to-yellow-400
- font-mono "
+ font-mono"
         >
           404
         </p>
@@ -20,7 +20,7 @@ export default function NotFound() {
         <div className="flex justify-center pt-3">
           <div>
             <Link href="/">
-              <Button>
+              <Button className="transition-colors duration-200 ease-in-out hover:bg-orange-600">
                 <Undo2 className="mr-2 h-4 w-4" />
                 <p>go home</p>
               </Button>
