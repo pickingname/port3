@@ -1,6 +1,7 @@
 import React from "react";
 import Li from "../entrycompo/BlogList";
 import Nav from "../entrycompo/Nav";
+import Footer from "../reusables/footer";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <div className="max-w-4xl mx-auto pb-12">
         <Nav />
           <Li />
+          <Footer />
         </div>
       </div>
     </main>
