@@ -15,15 +15,14 @@ export default function nav() {
           href={"/blogs"}
           className="ml-4 items-center pt-1.5 transition-colors duration-200 ease-in-out hover:text-orange-600"
         >
-          Blogs
+          myself
         </Link>
         <Link
           href="/projects"
           className="ml-4 items-center pt-1.5 transition-colors duration-200 ease-in-out hover:text-orange-600"
         >
-          Project showcase
+          socials
         </Link>
-        {/* <p className="ml-4 items-center pt-1.5">Project showcase</p> */}
       </div>
 
       <div className="flex space-x-4">
