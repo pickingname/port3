@@ -1,10 +1,15 @@
-'use client'
+"use client";
 
-import React from 'react';
+import React from "react";
 
 const blogPosts = [
-  { date: '2021', title: 'test', type: 'blog', url: 'https://example.com/a' },
-  { date: '2020', title: 'test2', type: 'showcase', url: 'https://example.com/b' },
+  { date: "2021", title: "test", type: "blog", url: "https://example.com/a" },
+  {
+    date: "2020",
+    title: "test2",
+    type: "showcase",
+    url: "https://example.com/b",
+  },
 ];
 
 const Li = () => {
@@ -23,11 +28,13 @@ const Li = () => {
             <tr
               key={index}
               className="border-t border-gray-700 cursor-pointer transition-colors duration-200 ease-in-out hover:bg-neutral-600 hover:bg-opacity-30"
-              onClick={() => window.open(post.url, '_blank')}
+              onClick={() => window.open(post.url, "_blank")}
             >
               <td className="py-2 pl-2 pr-4 text-gray-500">{post.date}</td>
               <td className="py-2 pr-56">{post.title}</td>
-              <td className="py-2 pr-2  text-right">{post.type.toLocaleString()}</td>
+              <td className="py-2 pr-2 text-right">
+                {post.type.toLocaleString()}
+              </td>
             </tr>
           ))}
         </tbody>
