@@ -2,14 +2,14 @@ import Link from "next/link";
 import React from "react";
 import { ModeToggle } from "../reusables/modeToggle";
 
-let name = "me";
+let name = "e8ca48fdse2";
 
 export default function nav() {
   return (
     <nav className="py-5 flex justify-between items-center rounded-md px-5">
       <div className="flex">
         <Link href={"/"}>
-          <h1 className="text-2xl font-semibold font-mono">{name}.port();</h1>
+          <h1 className="text-2xl font-outfit">{name}</h1>
         </Link>
         <Link
           href={"/blogs"}
