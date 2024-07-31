@@ -1,7 +1,3 @@
-# templates storage
-
-blogpage
-```tsx
 import React from "react";
 import Nav from "@/app/entrycompo/Nav";
 
@@ -27,4 +23,3 @@ const App = () => {
 };
 
 export default App;
-```
