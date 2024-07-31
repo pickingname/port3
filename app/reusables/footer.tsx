@@ -18,18 +18,21 @@ interface Commit {
 const Footer: React.FC = () => {
   const [latestCommit, setLatestCommit] = useState<Commit | null>(null);
   const currentYear = new Date().getFullYear();
+  const enableApiFetch = false;
 
   useEffect(() => {
     const fetchLatestCommit = async () => {
-      try {
-        const response = await axios.get<Commit[]>(
-          'https://api.github.com/repos/pickingname/port3/commits'
-        );
-        if (response.data.length > 0) {
-          setLatestCommit(response.data[0]);
+      if (enableApiFetch) {
+        try {
+          const response = await axios.get<Commit[]>(
+            'https://api.github.com/repos/pickingname/port3/commits'
+          );
+          if (response.data.length > 0) {
+            setLatestCommit(response.data[0]);
+          }
+        } catch (err) {
+          console.error('Failed to fetch the latest commit:', err);
         }
-      } catch (err) {
-        console.error('Failed to fetch the latest commit', err);
       }
     };
 
