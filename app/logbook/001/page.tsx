@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "@/app/entrycompo/Nav";
 import Image from "next/image";
 import Footer from "@/app/reusables/footer";
+import TimeL from "./compo/timeL";
 
 const App = () => {
   return (
@@ -37,7 +38,7 @@ const App = () => {
                 width={1334 / 2}
                 height={540 / 2}
                 alt="previous website preview"
-                className="rounded-md mx-auto mt-5"
+                className="rounded-md mx-auto mt-5 pb-3"
               />
               <p className="text-center text-neutral-500">the old website</p>
               <p>
@@ -45,13 +46,35 @@ const App = () => {
                 a map for a better understanding and i have quite some times
                 until the school starts anyway.
               </p>
-              <p>[image]</p>
+              <Image
+                src={
+                  "https://pickingname.github.io/images/logbook/image/001/0-46-53.png"
+                }
+                alt="first ui look"
+                width={1920 / 3}
+                height={1504 / 3}
+                className="rounded-md mx-auto mt-5"
+              />
+              <p className="text-center text-neutral-500 pb-3">
+                first ui with the map
+              </p>
               <p>
                 after that, i wanted to chalenge myself and make the website's
                 map displays the station's measured intensity on the map itself
                 and i actually did it.
               </p>
-              <p>[image]</p>
+              <Image
+                src={
+                  "https://pickingname.github.io/images/logbook/image/001/0-49-18.png"
+                }
+                alt="website maps with intensity icons"
+                width={1920 / 3}
+                height={1504 / 3}
+                className="rounded-md mx-auto mt-5"
+              />
+              <p className="text-center text-neutral-500 pb-3">
+                maps which now displays the intensity icons
+              </p>
               <p>
                 now that the actually displays the intensity on the map, ive got
                 a lot of ideas on this website, it started from making the map
@@ -63,6 +86,9 @@ const App = () => {
                 just shows the image as the slide show and you can just scrolls
                 down and see the changes with a cool timeline
               </p>
+              <div>
+                <TimeL />
+              </div>
             </div>
           </div>
           <Footer />
