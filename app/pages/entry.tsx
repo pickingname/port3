@@ -1,7 +1,7 @@
 import React from "react";
 import Li from "../entrycompo/BlogList";
 import Nav from "../entrycompo/Nav";
-import Footer from "../reusables/footer";
+import Footer from "../reusables/gitfooter";
 
 const App = () => {
   return (

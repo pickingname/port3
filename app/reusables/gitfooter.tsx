@@ -1,0 +1,59 @@
+'use client';
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+interface Commit {
+  sha: string;
+  commit: {
+    message: string;
+    author: {
+      name: string;
+      date: string;
+    };
+  };
+  html_url: string;
+}
+
+const Footer: React.FC = () => {
+  const [latestCommit, setLatestCommit] = useState<Commit | null>(null);
+  const currentYear = new Date().getFullYear();
+  const enableApiFetch = false;
+
+  useEffect(() => {
+    const fetchLatestCommit = async () => {
+      if (enableApiFetch) {
+        try {
+          const response = await axios.get<Commit[]>(
+            'https://api.github.com/repos/pickingname/port3/commits'
+          );
+          if (response.data.length > 0) {
+            setLatestCommit(response.data[0]);
+          }
+        } catch (err) {
+          console.error('Failed to fetch the latest commit:', err);
+        }
+      }
+    };
+
+    fetchLatestCommit();
+  }, []);
+
+  return (
+    <footer className="p-6 pt-3 pb-6 flex text-xs text-center mt-3 dark:text-gray-400 text-gray-500 font-mono">
+      <div className="grow text-left">
+        commit{" "}
+        {latestCommit ? (
+          <a target="_blank" rel="noopener noreferrer" href={latestCommit.html_url} className="transition-colors duration-200 ease-in-out hover:text-orange-600">
+            @{latestCommit.sha.substring(0, 7)} on {latestCommit.commit.author.date}
+          </a>
+        ) : (
+          "is loading"
+        )}
+      </div>
+      <div>&copy; {currentYear}</div>
+    </footer>
+  );
+};
+
+export default Footer;

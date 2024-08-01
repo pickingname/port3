@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "@/app/entrycompo/Nav";
 import Image from "next/image";
+import Footer from "@/app/reusables/footer";
 
 const App = () => {
   return (
@@ -44,13 +45,13 @@ const App = () => {
                 a map for a better understanding and i have quite some times
                 until the school starts anyway.
               </p>
-              <p>insert images</p>
+              <p>[image]</p>
               <p>
                 after that, i wanted to chalenge myself and make the website's
                 map displays the station's measured intensity on the map itself
                 and i actually did it.
               </p>
-              <p>image</p>
+              <p>[image]</p>
               <p>
                 now that the actually displays the intensity on the map, ive got
                 a lot of ideas on this website, it started from making the map
@@ -64,6 +65,7 @@ const App = () => {
               </p>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
     </main>
