@@ -4,6 +4,7 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 
 export default function TimeL() {
   return (
@@ -23,7 +24,7 @@ export default function TimeL() {
                 <span>new fullscreen ui</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/0-50-12.png"
                   width={1920}
                   height={1080}
@@ -51,7 +52,7 @@ export default function TimeL() {
                 <span>ui improvements</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/0-50-33.png"
                   width={1920}
                   height={1080}
@@ -78,7 +79,7 @@ export default function TimeL() {
                 <span>added map labels, improving the zoom function</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/0-53-00.png"
                   width={1920}
                   height={1080}
@@ -104,7 +105,7 @@ export default function TimeL() {
                 <span>light theme support</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/0-53-45.png"
                   width={1920}
                   height={1080}
@@ -113,7 +114,7 @@ export default function TimeL() {
                 />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                the map provider's light theme tiles are also provided
+                the map provider&apos;s light theme tiles are also provided
               </p>
             </div>
           </div>
@@ -130,7 +131,7 @@ export default function TimeL() {
                 <span>intensity report support</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/0-57-52.png"
                   width={1920}
                   height={1080}
@@ -140,7 +141,7 @@ export default function TimeL() {
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
                 the website will now recieves and displays ScalePrompt data from
-                p2pquake's api
+                p2pquake&apos;s api
               </p>
             </div>
           </div>
@@ -157,7 +158,7 @@ export default function TimeL() {
                 <span>P/S wave support</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/pswave.png"
                   width={1920}
                   height={1080}
@@ -166,7 +167,8 @@ export default function TimeL() {
                 />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                this renders p and s wave of an EEW. data is from yahoo's api
+                this renders p and s wave of an EEW. data is from yahoo&apos;s
+                api
               </p>
             </div>
           </div>
@@ -183,7 +185,7 @@ export default function TimeL() {
                 <span>stations grouping</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/1-07-51.png"
                   width={1920}
                   height={1080}
@@ -210,7 +212,7 @@ export default function TimeL() {
                 <span>tsunami warning</span>
               </div>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://pickingname.github.io/images/logbook/image/001/1-15-21.png"
                   width={1920}
                   height={1080}
@@ -219,8 +221,8 @@ export default function TimeL() {
                 />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                although its <span className="underline">unfinished</span>, the website will now
-                display tsunami warning from the jma's api
+                although its <span className="underline">unfinished</span>, the
+                website will now display tsunami warning from the jma&apos;s api
               </p>
             </div>
           </div>

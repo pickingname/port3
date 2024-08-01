@@ -29,7 +29,7 @@ const App = () => {
                 >
                   p2pquake
                 </a>
-                's api and just displays it in a card component.
+                &apos;s api and just displays it in a card component.
               </p>
               <Image
                 src={
@@ -59,8 +59,8 @@ const App = () => {
                 first ui with the map
               </p>
               <p>
-                after that, i wanted to chalenge myself and make the website's
-                map displays the station's measured intensity on the map itself
+                after that, i wanted to chalenge myself and make the website&apos;s
+                map displays the station&apos;s measured intensity on the map itself
                 and i actually did it.
               </p>
               <Image
