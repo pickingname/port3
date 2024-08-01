@@ -3,7 +3,7 @@
 import React from "react";
 
 const blogPosts = [
-  { year: "2024", title: "making q", type: "blog", url: "/logbook/001" },
+  { year: "2024", title: "making qualos", type: "blog", url: "/logbook/001" },
   {
     year: "2020",
     title: "test2",
@@ -27,7 +27,7 @@ const Li = () => {
           {blogPosts.map((post, index) => (
             <tr
               key={index}
-              className="border-t border-gray-700 cursor-pointer transition-colors duration-200 ease-in-out hover:bg-neutral-300 hover:bg-opacity-30 dark:hover:bg-neutral-600 dark:hover:bg-opacity-30"
+              className="border-t border-gray-700 cursor-pointer transition-colors duration-200 ease-in-out hover:bg-neutral-300 hover:bg-opacity-20 dark:hover:bg-neutral-600 dark:hover:bg-opacity-30"
               onClick={() => window.location.href = post.url}
             >
               <td className="py-2 pl-2 pr-4">{post.year}</td>

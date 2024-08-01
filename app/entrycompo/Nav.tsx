@@ -12,13 +12,13 @@ export default function nav() {
           <h1 className="text-2xl font-outfit">{name}</h1>
         </Link>
         <Link
-          href={"/blogs"}
+          href={"/i"}
           className="ml-4 items-center pt-1.5 transition-colors duration-200 ease-in-out hover:text-orange-600"
         >
           myself
         </Link>
         <Link
-          href="/projects"
+          href="/l"
           className="ml-4 items-center pt-1.5 transition-colors duration-200 ease-in-out hover:text-orange-600"
         >
           socials
