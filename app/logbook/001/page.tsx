@@ -3,6 +3,7 @@ import Nav from "@/app/entrycompo/Nav";
 import Image from "next/image";
 import Footer from "@/app/reusables/footer";
 import TimeL from "./compo/timeL";
+import Link from "next/link";
 
 const App = () => {
   return (
@@ -22,13 +23,13 @@ const App = () => {
                 when i was bored and have basically nothing to do. the main idea
                 is that i have an old website which all it does is fetches the
                 data from{" "}
-                <a
+                <Link
                   href="https://www.p2pquake.net/"
                   className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline underline-offset-2"
                   target="_blank"
                 >
                   p2pquake
-                </a>
+                </Link>
                 &apos;s api and just displays it in a card component.
               </p>
               <Image

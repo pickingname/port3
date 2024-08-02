@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 interface Commit {
   sha: string;
@@ -44,9 +45,9 @@ const Footer: React.FC = () => {
       <div className="grow text-left">
         commit{" "}
         {latestCommit ? (
-          <a target="_blank" rel="noopener noreferrer" href={latestCommit.html_url} className="transition-colors duration-200 ease-in-out hover:text-orange-600">
+          <Link target="_blank" rel="noopener noreferrer" href={latestCommit.html_url} className="transition-colors duration-200 ease-in-out hover:text-orange-600">
             @{latestCommit.sha.substring(0, 7)} on {latestCommit.commit.author.date}
-          </a>
+          </Link>
         ) : (
           "is loading"
         )}
