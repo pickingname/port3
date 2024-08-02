@@ -39,7 +39,7 @@ const App = () => {
                 width={1334 / 2}
                 height={540 / 2}
                 alt="previous website preview"
-                className="rounded-md mx-auto mt-5 pb-3"
+                className="rounded-md mx-auto mt-5 mb-3"
               />
               <p className="text-center text-neutral-500">the old website</p>
               <p>
@@ -56,7 +56,7 @@ const App = () => {
                 height={1504 / 3}
                 className="rounded-md mx-auto mt-5"
               />
-              <p className="text-center text-neutral-500 pb-3">
+              <p className="text-center text-neutral-500 mb-3">
                 first ui with the map
               </p>
               <p>
@@ -73,7 +73,7 @@ const App = () => {
                 height={1504 / 3}
                 className="rounded-md mx-auto mt-5"
               />
-              <p className="text-center text-neutral-500 pb-3">
+              <p className="text-center text-neutral-500 mb-3">
                 maps which now displays the intensity icons
               </p>
               <p>
