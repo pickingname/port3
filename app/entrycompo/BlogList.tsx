@@ -5,7 +5,7 @@ import React from "react";
 const blogPosts = [
   { year: "2024", title: "making qualos", type: "blog", url: "/logbook/001" },
   {
-    year: "2020",
+    year: "2024",
     title: "qualos showcase",
     type: "showcase",
     url: "/showcase/qualos",
