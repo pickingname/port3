@@ -6,9 +6,9 @@ const blogPosts = [
   { year: "2024", title: "making qualos", type: "blog", url: "/logbook/001" },
   {
     year: "2020",
-    title: "test2",
+    title: "qualos showcase",
     type: "showcase",
-    url: "https://example.com/b",
+    url: "/showcase/qualos",
   },
 ];
 
