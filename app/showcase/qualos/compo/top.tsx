@@ -25,7 +25,7 @@ export default function Intro() {
           beautifully presented earthquake information, on the web
         </p>
       </div>
-      <div className="flex h-5 items-center space-x-3 text-sm mt-3">
+      <div className="flex h-5 items-center space-x-3 text-sm mt-3"><p>base version</p>
         <div className="">
           <Link href={"https://qualos.info"} target="_blank">
             <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
@@ -33,7 +33,7 @@ export default function Intro() {
             </Button>
           </Link>
         </div>
-        <Separator orientation="vertical" className="bg-black dark:bg-white" />
+        <Separator orientation="vertical" className="bg-black dark:bg-white" /> <p>minimal version</p>
         <div className="">
           <Link href={"https://minimal.qualos.info"} target="_blank">
             <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
