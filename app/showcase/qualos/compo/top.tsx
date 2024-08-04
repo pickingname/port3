@@ -17,7 +17,7 @@ export default function Intro() {
 
       <div className="flex h-5 items-center space-x-3 text-sm">
         <SquareActivity />
-        <Separator orientation="vertical" />
+        <Separator orientation="vertical" className="bg-neutral-500" />
         <div className="">Introducing qualos</div>
       </div>
       <div>
@@ -25,17 +25,19 @@ export default function Intro() {
           beautifully presented earthquake information, on the web
         </p>
       </div>
-      <div className="flex h-5 items-center space-x-3 text-sm mt-3"><p>base version</p>
+      <div className="flex h-5 items-center space-x-3 text-sm mt-3">
+        <p>base version</p>
         <div className="">
-          <Link href={"https://qualos.info"} target="_blank">
+          <Link href={"https://qualos.info"} target="_top">
             <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
               <ExternalLink className="mr-2 h-4 w-4" /> visit
             </Button>
           </Link>
         </div>
-        <Separator orientation="vertical" className="bg-black dark:bg-white" /> <p>minimal version</p>
+        <Separator orientation="vertical" className="bg-neutral-500" />
+        <p>minimal version</p>
         <div className="">
-          <Link href={"https://minimal.qualos.info"} target="_blank">
+          <Link href={"https://minimal.qualos.info"} target="_top">
             <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
               <ExternalLink className="mr-2 h-4 w-4" /> visit
             </Button>
@@ -44,7 +46,9 @@ export default function Intro() {
       </div>
       <div>
         <div className="my-8 border rounded-md">
-          <p className="text-center mt-3 text-xl decoration-neutral-500 underline underline-offset-4">why this?</p>
+          <p className="text-center mt-3 text-xl decoration-neutral-500 underline underline-offset-4">
+            why this?
+          </p>
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-1/3 px-2 mb-4">
               <div className="rounded-lg p-6 text-center">
@@ -52,7 +56,7 @@ export default function Intro() {
                 <p className="text-lg mb-2">its fast</p>
                 <p className="text-neutral-500">
                   this website is designed to load quickly and provide you with
-                  the information
+                  the latest information
                 </p>
               </div>
             </div>
@@ -79,16 +83,9 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      {/* <div>
-        <p className="text-xl">built using leaflet, with three display types</p>
-        <p className="text-neutral-500">
-          types are applied in a specific conditions
-        </p>
-        <div className="pt-3">
-          <p>intensity report</p>
-          <p className="pl-3">this are an </p>
-        </div>
-      </div> */}
+      <div>
+        
+      </div>
     </div>
   );
 }

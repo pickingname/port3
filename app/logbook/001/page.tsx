@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "@/app/reusables/footer";
 import TimeL from "./compo/timeL";
 import Link from "next/link";
+import { Info } from 'lucide-react';
 
 const App = () => {
   return (
@@ -17,6 +18,19 @@ const App = () => {
               31/07/24 | user1
             </p>
             <div>
+              <div className="bg-card p-4 rounded-md border border-border mr-5 my-5">
+                <div className="flex items-start gap-4">
+                  <div className="bg-muted rounded-md p-2 flex items-center justify-center animate-pulse">
+                    <Info className="w-6 h-6 text-muted-foreground" />
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-medium">note</h4>
+                    <p className="text-muted-foreground text-balance">
+                      this is a blog showing the development of the website. for website showcase, please visit <a href="../showcase/qualos" className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline underline-offset-4">[here]</a>.<br /> and visit the main website <a className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline underline-offset-4" href="https://qualos.info">[here].</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
               <p>
                 i basically made an website that probably no one will use. but
                 heres how i did it, the development started around april 2024
@@ -60,9 +74,9 @@ const App = () => {
                 first ui with the map
               </p>
               <p>
-                after that, i wanted to chalenge myself and make the website&apos;s
-                map displays the station&apos;s measured intensity on the map itself
-                and i actually did it.
+                after that, i wanted to chalenge myself and make the
+                website&apos;s map displays the station&apos;s measured
+                intensity on the map itself and i actually did it.
               </p>
               <Image
                 src={
