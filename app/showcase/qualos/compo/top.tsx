@@ -17,7 +17,7 @@ export default function Intro() {
 
       <div className="flex h-5 items-center space-x-3 text-sm">
         <SquareActivity />
-        <Separator orientation="vertical" />
+        <Separator orientation="vertical" className="bg-neutral-500" />
         <div className="">Introducing qualos</div>
       </div>
       <div>
@@ -34,7 +34,7 @@ export default function Intro() {
             </Button>
           </Link>
         </div>
-        <Separator orientation="vertical" className="bg-black dark:bg-white" />{" "}
+        <Separator orientation="vertical" className="bg-neutral-500" />
         <p>minimal version</p>
         <div className="">
           <Link href={"https://minimal.qualos.info"} target="_blank">
@@ -84,14 +84,7 @@ export default function Intro() {
         </div>
       </div>
       <div>
-        <p className="text-xl">built using leaflet, with three display types</p>
-        <p className="text-neutral-500">
-          types are applied in a specific conditions
-        </p>
-        <div className="pt-3">
-          <p>intensity report</p>
-          <p className="pl-3">this are an </p>
-        </div>
+        
       </div>
     </div>
   );
