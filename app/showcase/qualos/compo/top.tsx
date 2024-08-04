@@ -60,6 +60,14 @@ export default function Intro() {
           </div>
         </div>
       </div>
+      <div>
+        <p className="text-xl">built using leaflet, with three display types</p>
+        <p className="text-neutral-500">types are applied in a specific conditions</p>
+        <div className="pt-3">
+          <p>intensity report</p>
+          <p className="pl-3">this are an </p>
+        </div>
+      </div>
     </div>
   );
 }
