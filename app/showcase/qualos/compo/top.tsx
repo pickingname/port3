@@ -56,7 +56,7 @@ export default function Intro() {
                 <p className="text-lg mb-2">its fast</p>
                 <p className="text-neutral-500">
                   this website is designed to load quickly and provide you with
-                  the information
+                  the latest information
                 </p>
               </div>
             </div>
