@@ -28,7 +28,7 @@ export default function Intro() {
       <div className="flex h-5 items-center space-x-3 text-sm mt-3">
         <p>base version</p>
         <div className="">
-          <Link href={"https://qualos.info"} target="_blank">
+          <Link href={"https://qualos.info"} target="_top">
             <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
               <ExternalLink className="mr-2 h-4 w-4" /> visit
             </Button>
@@ -37,7 +37,7 @@ export default function Intro() {
         <Separator orientation="vertical" className="bg-neutral-500" />
         <p>minimal version</p>
         <div className="">
-          <Link href={"https://minimal.qualos.info"} target="_blank">
+          <Link href={"https://minimal.qualos.info"} target="_top">
             <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
               <ExternalLink className="mr-2 h-4 w-4" /> visit
             </Button>
