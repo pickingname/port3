@@ -1,8 +1,9 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
-import { SquareActivity, ExternalLink } from "lucide-react";
+import { SquareActivity, ExternalLink, Waves, Rotate3D, Bug } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Card } from "@/components/ui/card";
 
 export default function Intro() {
   return (
@@ -84,8 +85,45 @@ export default function Intro() {
         </div>
       </div>
       <div>
-        <p className="text-xl">since everything is made to work in a web enviroment and i am not perfect.</p>
-        <p className="dark:text-neutral-400 text-neutral-600">mistakes were made, so here are some limitations</p>
+        <Card className="w-full grid gap-6 border-none shadow-none">
+          <div className="">
+            <h3 className="text-xl">limitations</h3>
+            <p className="text-muted-foreground">
+              since everything is made in a web environment and i am not perfect. there are some limitations of this website
+            </p>
+          </div>
+          <div className="grid gap-4">
+            <div className="flex items-center gap-4">
+              <Waves className="w-6 h-6 text-muted-foreground" />
+              <div className="space-y-1">
+                <h4 className="text-base font-medium">no tsunami data</h4>
+                <p className="text-sm text-muted-foreground">
+                  this website CANNOT display tsunami data, both text and lines. [these feature is still in development]
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <Rotate3D className="w-6 h-6 text-muted-foreground" />
+              <div className="space-y-1">
+                <h4 className="text-base font-medium">
+                  cannot display live station datas
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  i have not found the api to display the live station data yet. [feature is planned]
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <Bug className="w-6 h-6 text-muted-foreground" />
+              <div className="space-y-1">
+                <h4 className="text-base font-medium">rendering bugs</h4>
+                <p className="text-sm text-muted-foreground">
+                  there are bugs where icon starts to move up or down very slightly, i am still investigating this issue.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Card>
       </div>
     </div>
   );
