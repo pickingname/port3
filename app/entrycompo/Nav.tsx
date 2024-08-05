@@ -6,7 +6,7 @@ let name = "e8ca48fdse2";
 
 export default function nav() {
   return (
-    <nav className="py-5 flex justify-between items-center rounded-md px-5">
+    <nav className="py-5 flex justify-between items-center rounded-md pl-5 pr-4">
       <div className="flex">
         <Link href={"/"}>
           <h1 className="text-2xl font-outfit">{name}</h1>
