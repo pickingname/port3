@@ -84,7 +84,8 @@ export default function Intro() {
         </div>
       </div>
       <div>
-        
+        <p className="text-xl">since everything is made to work in a web enviroment and i am not perfect.</p>
+        <p className="dark:text-neutral-400 text-neutral-600">mistakes were made, so here are some limitations</p>
       </div>
     </div>
   );
