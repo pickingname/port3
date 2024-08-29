@@ -98,7 +98,7 @@ export default function Intro() {
               <div className="space-y-1">
                 <h4 className="text-base font-medium">no tsunami data</h4>
                 <p className="text-sm text-muted-foreground">
-                  this website CANNOT display tsunami data, both text and lines. [these feature is still in development]
+                  this website can do that now [update statement coming soon]
                 </p>
               </div>
             </div>
