@@ -76,8 +76,7 @@ export default function Intro() {
                 <div className="text-xl mb-2">03</div>
                 <p className="text-lg mb-2">its open source</p>
                 <p className="text-neutral-500">
-                  the source code for this website is available on github to
-                  ensure transparency
+                  the source code for this website is available on github
                 </p>
               </div>
             </div>
