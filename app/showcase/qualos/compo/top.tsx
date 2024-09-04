@@ -1,6 +1,12 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
-import { SquareActivity, ExternalLink, Waves, Rotate3D, Bug } from "lucide-react";
+import {
+  SquareActivity,
+  ExternalLink,
+  Waves,
+  Rotate3D,
+  Bug,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
@@ -86,9 +92,11 @@ export default function Intro() {
       <div>
         <Card className="w-full grid gap-6 border-none shadow-none">
           <div className="">
-            <h3 className="text-xl">limitations</h3>
+            <h3 className="text-xl">features</h3>
             <p className="text-muted-foreground">
-              since everything is made in a web environment and i am not perfect. there are some limitations of this website
+              everything is built within a web environment, and while I strive
+              for perfection, there may occasionally be bugs in these features,
+              though they are rare.
             </p>
           </div>
           <div className="grid gap-4">
@@ -108,7 +116,8 @@ export default function Intro() {
                   cannot display live station datas
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  i have not found the api to display the live station data yet. [feature is planned]
+                  I have not found the api to display the live station data yet.
+                  [feature is planned]
                 </p>
               </div>
             </div>
@@ -117,7 +126,8 @@ export default function Intro() {
               <div className="space-y-1">
                 <h4 className="text-base font-medium">rendering bugs</h4>
                 <p className="text-sm text-muted-foreground">
-                  there are bugs where icon starts to move up or down very slightly, i am still investigating this issue.
+                  there are bugs where icon starts to move up or down very
+                  slightly, I am still investigating this issue.
                 </p>
               </div>
             </div>
