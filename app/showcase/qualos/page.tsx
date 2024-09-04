@@ -8,7 +8,7 @@ export default function page() {
     <main>
       <div className="px-5 py-5">
         <div className="">
-          <div className="max-w-4xl mx-auto pb-12">
+          <div className="">
             <Nav />
             <div>
                 <Intro />

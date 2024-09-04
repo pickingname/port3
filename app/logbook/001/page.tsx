@@ -10,12 +10,12 @@ const App = () => {
   return (
     <main className="px-5 py-5">
       <div className="">
-        <div className="max-w-4xl mx-auto pb-12">
+        <div className="">
           <Nav />
           <div className="pl-5">
             <p className="text-xl">making qualos</p>
             <p className="font-mono text-neutral-500 text-sm">
-              31/07/24 | user1
+              31/07/24 | git420
             </p>
             <div>
               <div className="bg-card p-4 rounded-md border border-border mr-5 my-5">

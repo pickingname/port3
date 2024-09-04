@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${outfit.className} min-w-[405px]`}>
+      <body className={`${outfit.className} min-w-[405px] max-w-4xl mx-auto pb-12`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
