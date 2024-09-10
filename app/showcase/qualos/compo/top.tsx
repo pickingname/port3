@@ -1,6 +1,14 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
-import { SquareActivity, ExternalLink, Waves, Rotate3D, Bug } from "lucide-react";
+import {
+  SquareActivity,
+  ExternalLink,
+  Waves,
+  Rotate3D,
+  Bug,
+  FileJson2,
+  Settings2,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
@@ -29,20 +37,18 @@ export default function Intro() {
       <div className="flex h-5 items-center space-x-3 text-sm mt-3">
         <p>base version</p>
         <div className="">
-          <Link href={"https://qualos.info"} target="_top">
+          <Link href={"https://qualos.info"} target="_blank">
             <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
               <ExternalLink className="mr-2 h-4 w-4" /> visit
             </Button>
           </Link>
         </div>
         <Separator orientation="vertical" className="bg-neutral-500" />
-        <p>minimal version</p>
-        <div className="">
-          <Link href={"https://minimal.qualos.info"} target="_top">
-            <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-orange-600">
-              <ExternalLink className="mr-2 h-4 w-4" /> visit
-            </Button>
-          </Link>
+        <p className="opacity-50">minimal version</p>
+        <div className="opacity-50">
+          <Button className="h-8 transition-colors duration-200 ease-in-out hover:bg-neutral-600 dark:hover:bg-neutral-300">
+            <ExternalLink className="mr-2 h-4 w-4" /> visit
+          </Button>
         </div>
       </div>
       <div>
@@ -76,8 +82,7 @@ export default function Intro() {
                 <div className="text-xl mb-2">03</div>
                 <p className="text-lg mb-2">its open source</p>
                 <p className="text-neutral-500">
-                  the source code for this website is available on github to
-                  ensure transparency
+                  the source code for this website is available on github
                 </p>
               </div>
             </div>
@@ -86,42 +91,51 @@ export default function Intro() {
       </div>
       <div>
         <Card className="w-full grid gap-6 border-none shadow-none">
-          <div className="">
-            <h3 className="text-xl">limitations</h3>
+          <div>
+            <h3 className="text-xl">features</h3>
             <p className="text-muted-foreground">
-              since everything is made in a web environment and i am not perfect. there are some limitations of this website
+              everything is built within a web environment, and while I strive
+              for perfection, there may occasionally be bugs in these features,
+              though they are rare.
             </p>
           </div>
-          <div className="grid gap-4">
-            <div className="flex items-center gap-4">
-              <Waves className="w-6 h-6 text-muted-foreground" />
-              <div className="space-y-1">
-                <h4 className="text-base font-medium">no tsunami data</h4>
-                <p className="text-sm text-muted-foreground">
-                  this website can do that now [update statement coming soon]
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Rotate3D className="w-6 h-6 text-muted-foreground" />
-              <div className="space-y-1">
-                <h4 className="text-base font-medium">
-                  cannot display live station datas
-                </h4>
-                <p className="text-sm text-muted-foreground">
-                  i have not found the api to display the live station data yet. [feature is planned]
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Bug className="w-6 h-6 text-muted-foreground" />
-              <div className="space-y-1">
-                <h4 className="text-base font-medium">rendering bugs</h4>
-                <p className="text-sm text-muted-foreground">
-                  there are bugs where icon starts to move up or down very slightly, i am still investigating this issue.
-                </p>
-              </div>
-            </div>
+
+          <div className="text-balance">
+            <Waves className="w-6 h-6 text-muted-foreground flex-shrink-0" />
+            <h4 className="text-base font-medium">tsunami forecast</h4>
+            <p className="text-sm text-muted-foreground">
+              shows a tsunami forecast as a line on the map itself (classified
+              as 2 classes, watch and warning). forecast data is fetched from{" "}
+              <a
+                href="https://p2pquake.net"
+                target="_blank"
+                className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline"
+              >
+                p2pquake
+              </a>
+            </p>
+
+            <br />
+
+            <FileJson2 className="w-6 h-6 text-muted-foreground flex-shrink-0 mb-1" />
+            <h4 className="text-base font-medium">
+              displays multiple data format
+            </h4>
+            <p className="text-sm text-muted-foreground">
+              supports multiple data formats, including DetailScale (intensity
+              report), ScalePrompt (prefecture intensity report), Foreign
+              (distant earthquake report), Destination (Epicenter information
+              confirmation), Tsunami warning / watch.
+            </p>
+
+            <br />
+
+            <Settings2 className="w-6 h-6 text-muted-foreground flex-shrink-0" />
+            <h4 className="text-base font-medium">customisable ui</h4>
+            <p className="text-sm text-muted-foreground">
+              you can easily customize the UI to your liking using the settings
+              button located in the bottom right corner of your screen.
+            </p>
           </div>
         </Card>
       </div>

@@ -15,7 +15,7 @@ const App = () => {
           <div className="pl-5">
             <p className="text-xl">making qualos</p>
             <p className="font-mono text-neutral-500 text-sm">
-              31/07/24 | user1
+              31/07/24 | git420
             </p>
             <div>
               <div className="bg-card p-4 rounded-md border border-border mr-5 my-5">
@@ -32,10 +32,10 @@ const App = () => {
                 </div>
               </div>
               <p>
-                i basically made an website that probably no one will use. but
-                heres how i did it, the development started around april 2024
-                when i was bored and have basically nothing to do. the main idea
-                is that i have an old website which all it does is fetches the
+                I basically made an website that probably no one will use. but
+                heres how I did it, the development started around april 2024
+                when I was bored and have basically nothing to do. the main idea
+                is that I have an old website which all it does is fetches the
                 data from{" "}
                 <Link
                   href="https://www.p2pquake.net/"
@@ -57,8 +57,8 @@ const App = () => {
               />
               <p className="text-center text-neutral-500">the old website</p>
               <p>
-                the old website was good enough but i wanted the website to have
-                a map for a better understanding and i have quite some times
+                the old website was good enough but I wanted the website to have
+                a map for a better understanding and I have quite some times
                 until the school starts anyway.
               </p>
               <Image
@@ -74,9 +74,9 @@ const App = () => {
                 first ui with the map
               </p>
               <p>
-                after that, i wanted to chalenge myself and make the
+                after that, I wanted to chalenge myself and make the
                 website&apos;s map displays the station&apos;s measured
-                intensity on the map itself and i actually did it.
+                intensity on the map itself and I actually did it.
               </p>
               <Image
                 src={
@@ -97,7 +97,7 @@ const App = () => {
               </p>
               <br />
               <p>
-                theres a lot more update which i can just explains but i will
+                theres a lot more update which I can just explains but I will
                 just shows the image as the slide show and you can just scrolls
                 down and see the changes with a cool timeline
               </p>

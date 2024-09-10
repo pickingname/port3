@@ -200,8 +200,8 @@ export default function TimeL() {
             </div>
           </div>
           <div className="grid grid-cols-[48px_1fr] items-start gap-4">
-            <div className="relative flex h-12 w-12 items-center justify-center border-2 dark:border-white border-black bg-opacity-0 rounded-full">
-              <span className="text-sm font-medium dark:text-white text-black">
+            <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-primary">
+              <span className="text-sm font-medium text-primary-foreground">
                 08
               </span>
             </div>
@@ -221,9 +221,56 @@ export default function TimeL() {
                 />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                although its <span className="underline">unfinished</span>, the
-                website will now display tsunami warning from the jma&apos;s api
+                this feature takes the tsunami warning data from the
+                p2pquake&apos;s api and displays it on the map
               </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-[48px_1fr] items-start gap-4">
+            <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-primary">
+              <span className="text-sm font-medium text-primary-foreground">
+                09
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                <span>aug 26, 2024</span>
+                <Separator orientation="vertical" className="h-4" />
+                <span>settings</span>
+              </div>
+              <div className="mt-2">
+                <Image
+                  src="https://pickingname.github.io/images/logbook/image/001/q_settings.png"
+                  width={1920}
+                  height={1080}
+                  alt="stations grouping"
+                  className="rounded-lg"
+                />
+              </div>
+              <p className="mt-2 text-sm text-muted-foreground">
+                basically a settings ui that allows the user to change the
+                settings and behavior of the website.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-[48px_1fr] items-start gap-4">
+            <div className="relative flex h-12 w-12 items-center justify-center border-2 dark:border-white border-black bg-opacity-0 rounded-full">
+              <span className="text-sm font-medium dark:text-white text-black">
+                10
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                <span>--</span>
+                <Separator orientation="vertical" className="h-4" />
+                <span>live int data</span>
+              </div>
+              <div className="mt-2">
+                <p className="mt-2 text-sm text-muted-foreground">
+                  basically a live data from around ~1200 stations. i need to
+                  find an api that gives this first and then i can implement it, this will takes a lot of time and i still needs to go to school.
+                </p>
+              </div>
             </div>
           </div>
         </div>
