@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { ModeToggle } from "../reusables/modeToggle";
 
-let name = "e8ca48fdse2";
+let name = "git420";
 
 export default function nav() {
   return (

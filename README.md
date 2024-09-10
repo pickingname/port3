@@ -1,6 +1,7 @@
 # templates storage
 
 blogpage
+
 ```tsx
 import React from "react";
 import Nav from "@/app/entrycompo/Nav";
@@ -14,10 +15,15 @@ const App = () => {
           <div className="pl-5">
             <p className="text-xl">content title</p>
             <p className="font-mono text-neutral-500 text-sm">
-              31/07/24 | user1
+              31/07/24 | git420
             </p>
             <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum similique cumque odit cupiditate aspernatur porro possimus, corporis tenetur consequuntur dolorem hic iusto officiis sapiente ducimus praesentium ut ipsa omnis mollitia.</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum similique cumque odit cupiditate aspernatur porro
+                possimus, corporis tenetur consequuntur dolorem hic iusto
+                officiis sapiente ducimus praesentium ut ipsa omnis mollitia.
+              </p>
             </div>
           </div>
         </div>
