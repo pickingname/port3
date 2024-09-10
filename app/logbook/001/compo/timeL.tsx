@@ -88,7 +88,7 @@ export default function TimeL() {
                 />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                added the padding function in the leaflet map bounds
+                added the padding function in the leaflet map to make the location easier to see
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function TimeL() {
                 />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                the map provider&apos;s light theme tiles are also provided
+                the map provider&apos;s light theme tiles are also provided, themes are changed based on the system theme setting
               </p>
             </div>
           </div>
@@ -140,7 +140,7 @@ export default function TimeL() {
                 />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                the website will now recieves and displays ScalePrompt data from
+                the website will now recieves and displays ScalePrompt (intensity report) data from
                 p2pquake&apos;s api
               </p>
             </div>
