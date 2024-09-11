@@ -18,8 +18,8 @@ const Li = () => {
       <table className="w-full">
         <thead>
           <tr className="text-left ">
-            <th className="py-2 pl-2 pr-4 font-normal">year</th>
-            <th className="py-2 pr-4 font-normal">title</th>
+            {/* <th className="py-2 pl-2 pr-4 font-normal">year</th> */}
+            <th className="pl-2 py-2 pr-4 font-normal">title</th>
             <th className="py-2 pr-2 text-right font-normal">type</th>
           </tr>
         </thead>
@@ -30,8 +30,8 @@ const Li = () => {
               className="border-t border-gray-700 cursor-pointer transition-colors duration-200 ease-in-out hover:bg-neutral-300 hover:bg-opacity-20 dark:hover:bg-neutral-600 dark:hover:bg-opacity-30"
               onClick={() => window.location.href = post.url}
             >
-              <td className="py-2 pl-2 pr-4">{post.year}</td>
-              <td className="py-2 pr-56">{post.title}</td>
+              {/* <td className="py-2 pl-2 pr-4">{post.year}</td> */}
+              <td className="pl-2 py-2 pr-56">{post.title}</td>
               <td className="py-2 pr-2 text-right ">
                 {post.type.toLocaleString()}
               </td>
