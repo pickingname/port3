@@ -4,7 +4,8 @@ import Image from "next/image";
 import Footer from "@/app/reusables/footer";
 import TimeL from "./compo/timeL";
 import Link from "next/link";
-import { Info } from 'lucide-react';
+import { Home, Info } from "lucide-react";
+import BlogReturnHomeButton from "@/app/reusables/blogReturnHomeButton";
 
 const App = () => {
   return (
@@ -26,7 +27,21 @@ const App = () => {
                   <div className="space-y-2">
                     <h4 className="font-medium">note</h4>
                     <p className="text-muted-foreground text-balance">
-                      this is a blog showing the development of the website. for website showcase, please visit <a href="../showcase/qualos" className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline underline-offset-4">[here]</a>.<br /> and visit the main website <a className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline underline-offset-4" href="https://qualos.info">[here].</a>
+                      this is a blog showing the development of the website. for
+                      website showcase, please visit{" "}
+                      <a
+                        href="../showcase/qualos"
+                        className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline underline-offset-4"
+                      >
+                        [here]
+                      </a>
+                      .<br /> and visit the main website{" "}
+                      <a
+                        className="transition-colors duration-200 ease-in-out hover:text-orange-600 underline underline-offset-4"
+                        href="https://qualos.info"
+                      >
+                        [here].
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -105,6 +120,7 @@ const App = () => {
                 <TimeL />
               </div>
             </div>
+            <BlogReturnHomeButton />
           </div>
           <Footer />
         </div>
