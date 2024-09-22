@@ -21,7 +21,7 @@ export default function nav() {
           href="/"
           className="ml-4 items-center pt-1.5 transition-colors duration-200 ease-in-out hover:text-orange-600"
         >
-          socials
+          project showcase
         </Link>
       </div>
 
