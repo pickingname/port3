@@ -9,7 +9,7 @@ import BlogReturnHomeButton from "@/app/reusables/blogReturnHomeButton";
 
 const App = () => {
   return (
-    <main className="px-5 py-5">
+    <main className="py-5">
       <div className="">
         <div className="max-w-4xl mx-auto pb-12">
           <Nav />
