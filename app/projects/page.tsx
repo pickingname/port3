@@ -15,7 +15,7 @@ export default function Page() {
         </p>
         <a
           href="/"
-          className="inline-flex items-center px-4 py-2 bg-neutral-700 text-white rounded hover:bg-neutral-800 ease-out duration-150"
+          className="inline-flex items-center px-4 py-2 bg-neutral-700 text-white rounded hover:bg-neutral-800 ease-out duration-200"
         >
           <Undo2 className="w-5 h-5 mr-2" />
           go back
