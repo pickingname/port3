@@ -19,7 +19,7 @@ interface Commit {
 const Footer: React.FC = () => {
   const [latestCommit, setLatestCommit] = useState<Commit | null>(null);
   const currentYear = new Date().getFullYear();
-  const enableApiFetch = true;
+  const enableApiFetch = false;
 
   useEffect(() => {
     const fetchLatestCommit = async () => {
