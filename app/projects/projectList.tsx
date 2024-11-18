@@ -1,21 +1,58 @@
 "use client";
 import { useState } from "react";
-import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import { ChevronDownIcon, ChevronUpIcon, ExternalLink } from "lucide-react";
 
 type Project = {
   id: number;
   name: string;
   year: number;
   status: "archived" | "active" | "stale";
+  link: string;
 };
 
 const projects: Project[] = [
-  { id: 1, name: "fgraph", year: 2024, status: "stale" },
-  { id: 2, name: "unnamed river height viewer", year: 2024, status: "stale" },
-  { id: 3, name: "untitled weather app", year: 2024, status: "stale" },
-  { id: 4, name: "untitled weather dashboard", year: 2024, status: "stale" },
-  { id: 5, name: "qualos", year: 2024, status: "active" },
-  { id: 6, name: "zinc", year: 2024, status: "archived" },
+  {
+    id: 1,
+    name: "fgraph",
+    year: 2024,
+    status: "stale",
+    link: "https://example.com",
+  },
+  {
+    id: 2,
+    name: "unnamed river height viewer",
+    year: 2024,
+    status: "stale",
+    link: "https://example.com",
+  },
+  {
+    id: 3,
+    name: "untitled weather app",
+    year: 2024,
+    status: "stale",
+    link: "https://example.com",
+  },
+  {
+    id: 4,
+    name: "untitled weather dashboard",
+    year: 2024,
+    status: "stale",
+    link: "https://example.com",
+  },
+  {
+    id: 5,
+    name: "qualos",
+    year: 2024,
+    status: "active",
+    link: "https://example.com",
+  },
+  {
+    id: 6,
+    name: "zinc",
+    year: 2024,
+    status: "archived",
+    link: "https://example.com",
+  },
 ];
 
 export default function ProjectList() {
@@ -88,7 +125,17 @@ export default function ProjectList() {
                   className="hover:bg-neutral-500/30 dark:hover:bg-neutral-300/30 transition-colors ease-out duration-200"
                 >
                   <td className="px-6 py-4 whitespace-nowrap">
-                    {project.name}
+                    <div className="flex items-center">
+                      <a
+                        href={project.link}
+                        target="_self"
+                        rel="noopener noreferrer"
+                        className="underline"
+                      >
+                        {project.name}
+                      </a>
+                      <ExternalLink className="mt-[4px] ml-1 h-3.5 w-3.5" />
+                    </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     {project.year}
