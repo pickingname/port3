@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -19,20 +19,20 @@ interface Commit {
 const Footer: React.FC = () => {
   const [latestCommit, setLatestCommit] = useState<Commit | null>(null);
   const currentYear = new Date().getFullYear();
-  const enableApiFetch = true;
+  const enableApiFetch = false;
 
   useEffect(() => {
     const fetchLatestCommit = async () => {
       if (enableApiFetch) {
         try {
           const response = await axios.get<Commit[]>(
-            'https://api.github.com/repos/pickingname/port3/commits'
+            "https://api.github.com/repos/pickingname/port3/commits"
           );
           if (response.data.length > 0) {
             setLatestCommit(response.data[0]);
           }
         } catch (err) {
-          console.error('Failed to fetch the latest commit:', err);
+          console.error("Failed to fetch the latest commit:", err);
         }
       }
     };
@@ -45,8 +45,14 @@ const Footer: React.FC = () => {
       <div className="grow text-left">
         commit{" "}
         {latestCommit ? (
-          <Link target="_blank" rel="noopener noreferrer" href={latestCommit.html_url} className="transition-colors duration-200 ease-in-out hover:text-orange-600">
-            @{latestCommit.sha.substring(0, 7)} on {latestCommit.commit.author.date}
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={latestCommit.html_url}
+            className="transition-colors duration-200 ease-in-out hover:text-orange-600"
+          >
+            @{latestCommit.sha.substring(0, 7)} on{" "}
+            {latestCommit.commit.author.date}
           </Link>
         ) : (
           "is loading"

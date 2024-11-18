@@ -10,7 +10,13 @@ export default function Page() {
         <div className="max-w-4xl mx-auto pb-12">
           <Nav />
           <div className="pl-5 pr-4">
-            <p className="text-xl"><span></span>project/list</p>
+            <p className="text-xl">
+              project/list
+              <p className="font-mono text-neutral-500 text-sm">
+                sortable project list by name, year, and status. click for
+                details.
+              </p>
+            </p>
             <div className="pt-5">
               <ProjectList />
             </div>

@@ -55,7 +55,7 @@ export default function ProjectList() {
   };
 
   return (
-    <div className="min-h-screen max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto">
       <div className="max-w-4xl mx-auto">
         <div className="dark:bg-neutral-800 bg-neutral-100 rounded-lg overflow-hidden">
           <table className="w-full">
