@@ -22,10 +22,18 @@ export default function ProjectList() {
   const [sortField, setSortField] = useState<keyof Project>("name");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
 
+  const statusOrder = ["active", "stale", "archived"];
+
   const sortedProjects = [...projects].sort((a, b) => {
-    if (a[sortField] < b[sortField]) return sortDirection === "asc" ? -1 : 1;
-    if (a[sortField] > b[sortField]) return sortDirection === "asc" ? 1 : -1;
-    return 0;
+    if (sortField === "status") {
+      const aIndex = statusOrder.indexOf(a.status);
+      const bIndex = statusOrder.indexOf(b.status);
+      return sortDirection === "asc" ? aIndex - bIndex : bIndex - aIndex;
+    } else {
+      if (a[sortField] < b[sortField]) return sortDirection === "asc" ? -1 : 1;
+      if (a[sortField] > b[sortField]) return sortDirection === "asc" ? 1 : -1;
+      return 0;
+    }
   });
 
   const toggleSort = (field: keyof Project) => {
