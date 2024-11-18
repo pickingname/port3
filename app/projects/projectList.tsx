@@ -19,8 +19,8 @@ const projects: Project[] = [
 ];
 
 export default function ProjectList() {
-  const [sortField, setSortField] = useState<keyof Project>("name");
-  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
+  const [sortField, setSortField] = useState<keyof Project>("year");
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
 
   const statusOrder = ["active", "stale", "archived"];
 
