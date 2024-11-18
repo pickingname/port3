@@ -19,17 +19,10 @@ const App = () => {
                 and meteorology.
                 <br />
                 <br />
-                i am nothing special, just a person who likes to code and
-                design. i used to work with python and arduino stuffs, just to
-                relise that its really not for me.
+                i&apos;m just a person who enjoys coding and designing. used to work with python and arduino stuffs, but realized that web development is more fun and interesting. i am currently learning react and next.js, and i am planning to learn more about backend, docker, and more languages in the future.
                 <br />
                 <br />
-                i like to make websites and design things, i am not a
-                professional but i am learning. my projects are mostly about
-                using free public api and displaying it in my type of way. this
-                portfoilo is really nothing special, i just wanted to make a
-                website for myself, no flashing colors and cool 3d texts, just a
-                simple sleek website. this portfoilo style is also inspried by rauchg. 
+                i enjoy building websites and designing. my projects mainly focus on using free public APIs and presenting them in my own style. this portfolio is simple and sleek, no flashy colors or any fancy UIs. it&apos;s also inspired by Rauchg&apos;s design approach.
                 <br />
                 <br />
                 check the main page and look at the showcase for cool things i
