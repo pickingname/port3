@@ -15,21 +15,29 @@ const App = () => {
             </p>
             <div>
               <p>
-                hello, i am a web developer and designer studying in seismology
-                and meteorology.
+                hello, i am a web developer and designer studying
+                <sup className="text-neutral-500 text-xs sups">(?)</sup> in
+                seismology and meteorology.
                 <br />
                 <br />
-                i&apos;m just a person who enjoys coding and designing. used to work with python and arduino stuffs, but realized that web development is more fun and interesting. i am currently learning react and next.js, and i am planning to learn more about backend, docker, and more languages in the future.
+                i&apos;m just a person who enjoys coding and designing. used to
+                work with python and arduino stuffs, but realized that web
+                development is more fun and interesting. i am currently learning
+                react and next.js, and i am planning to learn more about
+                backend, docker, and more languages in the future.
                 <br />
                 <br />
-                i enjoy building websites and designing. my projects mainly focus on using free public APIs and presenting them in my own style. this portfolio is simple and sleek, no flashy colors or any fancy UIs. it&apos;s also inspired by Rauchg&apos;s design approach.
+                i enjoy building websites and designing. my projects mainly
+                focus on using free public APIs and presenting them in my own
+                style.
                 <br />
                 <br />
-                check the main page and look at the showcase for cool things i
-                build, look at the blog for some useless information i wrote. i
-                am not a writer, i am not really good at writing stories and
-                long texts, things will get boring quick so i will keep it
-                short.
+                check the showcase page for cool things i&apos;ve created, and
+                check out the blog for some lighthearted rants & stories
+                i&apos;ve shared. and i&apos;m not a professional writer and
+                will most of the time struggle on making cool and addictive
+                stories so i&apos;ll mostly keep things brief to avoid losing
+                your interest.
               </p>
             </div>
           </div>
