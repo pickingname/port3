@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ChevronDownIcon, ChevronUpIcon, ExternalLink } from "lucide-react";
+import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
 
 type Project = {
   id: number;
@@ -124,7 +124,7 @@ export default function ProjectList() {
                   key={project.id}
                   className="hover:bg-neutral-500/30 dark:hover:bg-neutral-300/30 transition-colors ease-out duration-200"
                 >
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-6 py-4 whitespace-normal">
                     <div className="flex items-center">
                       <a
                         href={project.link}
@@ -134,13 +134,13 @@ export default function ProjectList() {
                       >
                         {project.name}
                       </a>
-                      <ExternalLink className="mt-[4px] ml-1 h-3.5 w-3.5" />
+                      {/* <ExternalLink className="mt-[4px] ml-1 h-3.5 w-3.5" /> */}
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-6 py-4 whitespace-normal">
                     {project.year}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-6 py-4 whitespace-normal">
                     <span
                       className={`px-2 inline-flex text-xs leading-5 font-medium rounded-sm ${
                         project.status === "active"
