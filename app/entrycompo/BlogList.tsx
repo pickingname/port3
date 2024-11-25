@@ -8,7 +8,7 @@ const blogPosts = [
     year: "2024",
     title: "qualos showcase",
     type: "showcase",
-    url: "/showcase/qualos",
+    url: "/projects/qualos",
   },
 ];
 
