@@ -4,8 +4,6 @@ import {
   SquareActivity,
   ExternalLink,
   Waves,
-  Rotate3D,
-  Bug,
   FileJson2,
   Settings2,
   MonitorSmartphone,
