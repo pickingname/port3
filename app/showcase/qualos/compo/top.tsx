@@ -8,6 +8,7 @@ import {
   Bug,
   FileJson2,
   Settings2,
+  MonitorSmartphone,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -51,7 +52,7 @@ export default function Intro() {
           </Button>
         </div>
       </div>
-      <div>
+      {/* <div>
         <div className="my-8 border rounded-md">
           <p className="text-center mt-3 text-xl decoration-neutral-500 underline underline-offset-4">
             why this?
@@ -88,15 +89,15 @@ export default function Intro() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div>
-        <Card className="w-full grid gap-6 border-none shadow-none">
+        <Card className="w-full grid gap-6 border-none shadow-none mt-4">
           <div>
             <h3 className="text-xl">features</h3>
             <p className="text-muted-foreground">
-              everything is built within a web environment, and while I strive
-              for perfection, there may occasionally be bugs in these features,
-              though they are rare.
+              everything is built within a web environment, which means that
+              there may occasionally be bugs in these features, though they are
+              generally rare.
             </p>
           </div>
 
@@ -131,10 +132,19 @@ export default function Intro() {
             <br />
 
             <Settings2 className="w-6 h-6 text-muted-foreground flex-shrink-0" />
-            <h4 className="text-base font-medium">customisable ui</h4>
+            <h4 className="text-base font-medium">customisable behavior</h4>
             <p className="text-sm text-muted-foreground">
-              you can easily customize the UI to your liking using the settings
-              button located in the bottom right corner of your screen.
+              you can customize the UI and fetching/displaying behavior using
+              the settings button in the bottom right corner.
+            </p>
+
+            <br />
+
+            <MonitorSmartphone className="w-6 h-6 text-muted-foreground flex-shrink-0" />
+            <h4 className="text-base font-medium">responsive UI</h4>
+            <p className="text-sm text-muted-foreground">
+              the website is designed to be responsive with an secondary smaller UI, so it should work on
+              most devices. including mobile phones, tablets, and desktops.
             </p>
           </div>
         </Card>
