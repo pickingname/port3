@@ -8,13 +8,13 @@ const blogPosts = [
     year: "2024",
     title: "qualos showcase",
     type: "showcase",
-    url: "/showcase/qualos",
+    url: "/projects/qualos",
   },
 ];
 
 const Li = () => {
   return (
-    <div className="text-black dark:text-gray-500 p-4">
+    <div className="text-black dark:text-gray-500 px-4">
       <table className="w-full">
         <thead>
           <tr className="text-left ">

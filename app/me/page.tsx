@@ -11,32 +11,33 @@ const App = () => {
           <div className="pl-5">
             <p className="text-xl">about me</p>
             <p className="font-mono text-neutral-500 text-sm">
-              16/09/24 | git420
+              16/09/24 | tin
             </p>
             <div>
               <p>
-                hello, i am a web developer and designer studying in seismology
-                and meteorology.
+                hello, i am a web developer and designer studying
+                <sup className="text-neutral-500 text-xs sups">(?)</sup> in
+                seismology and meteorology.
                 <br />
                 <br />
-                i am nothing special, just a person who likes to code and
-                design. i used to work with python and arduino stuffs, just to
-                relise that its really not for me.
+                i&apos;m just a person who enjoys coding and designing. used to
+                work with python and arduino stuffs, but realized that web
+                development is more fun and interesting. i am currently learning
+                react and next.js, and i am planning to learn more about
+                backend, docker, and more languages in the future.
                 <br />
                 <br />
-                i like to make websites and design things, i am not a
-                professional but i am learning. my projects are mostly about
-                using free public api and displaying it in my type of way. this
-                portfoilo is really nothing special, i just wanted to make a
-                website for myself, no flashing colors and cool 3d texts, just a
-                simple sleek website. this portfoilo style is also inspried by rauchg. 
+                i enjoy building websites and designing. my projects mainly
+                focus on using free public APIs and presenting them in my own
+                style.
                 <br />
                 <br />
-                check the main page and look at the showcase for cool things i
-                build, look at the blog for some useless information i wrote. i
-                am not a writer, i am not really good at writing stories and
-                long texts, things will get boring quick so i will keep it
-                short.
+                check the showcase page for cool things i&apos;ve created, and
+                check out the blog for some lighthearted rants & stories
+                i&apos;ve shared. and i&apos;m not a professional writer and
+                will most of the time struggle on making cool and addictive
+                stories so i&apos;ll mostly keep things brief to avoid losing
+                your interest.
               </p>
             </div>
           </div>

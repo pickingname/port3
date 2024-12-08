@@ -15,7 +15,7 @@ const App = () => {
           <div className="pl-5">
             <p className="text-xl">content title</p>
             <p className="font-mono text-neutral-500 text-sm">
-              31/07/24 | git420
+              31/07/24 | tin
             </p>
             <div>
               <p>
