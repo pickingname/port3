@@ -44,7 +44,7 @@ const projects: Project[] = [
     name: "qualos",
     year: 2024,
     status: "active",
-    link: "https://example.com",
+    link: "../projects/qualos",
   },
   {
     id: 6,
@@ -122,7 +122,7 @@ export default function ProjectList() {
               {sortedProjects.map((project) => (
                 <tr
                   key={project.id}
-                  className="hover:bg-neutral-500/30 dark:hover:bg-neutral-300/30 transition-colors ease-out duration-200"
+                  className="hover:bg-neutral-500/5 dark:hover:bg-neutral-300/5 transition-colors ease-out duration-200"
                 >
                   <td className="px-6 py-4 whitespace-normal">
                     <div className="flex items-center">

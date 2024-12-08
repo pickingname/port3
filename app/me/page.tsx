@@ -11,7 +11,7 @@ const App = () => {
           <div className="pl-5">
             <p className="text-xl">about me</p>
             <p className="font-mono text-neutral-500 text-sm">
-              16/09/24 | git420
+              16/09/24 | tin
             </p>
             <div>
               <p>
