@@ -16,28 +16,28 @@ const projects: Project[] = [
     name: "fgraph",
     year: 2024,
     status: "stale",
-    link: "https://example.com",
+    link: "https://fgraph.vercel.app",
   },
   {
     id: 2,
     name: "unnamed river height viewer",
     year: 2024,
     status: "archived",
-    link: "https://example.com",
+    link: "https://wesm.pages.dev",
   },
   {
     id: 3,
-    name: "untitled weather app",
+    name: "untitled weather app (github repo link)",
     year: 2024,
     status: "archived",
-    link: "https://example.com",
+    link: "https://github.com/pickingname/weath/tree/entry-page",
   },
   {
     id: 4,
-    name: "untitled weather dashboard",
+    name: "untitled weather dashboard (github repo link)",
     year: 2024,
     status: "active",
-    link: "https://example.com",
+    link: "https://github.com/pickingname/weath/tree/dashboard",
   },
   {
     id: 5,
@@ -48,10 +48,10 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    name: "zinc",
+    name: "zinc (no page)",
     year: 2024,
     status: "archived",
-    link: "https://example.com",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   },
 ];
 
