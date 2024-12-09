@@ -10,34 +10,30 @@ const App = () => {
           <Nav />
           <div className="pl-5">
             <p className="text-xl">about me</p>
-            <p className="font-mono text-neutral-500 text-sm">
-              16/09/24 | tin
-            </p>
+            <p className="font-mono text-neutral-500 text-sm">16/09/24 | tin</p>
             <div>
               <p>
-                hello, i am a web developer and designer studying
+                hello, I am a web developer and designer with a background
                 <sup className="text-neutral-500 text-xs sups">(?)</sup> in
                 seismology and meteorology.
                 <br />
                 <br />
-                i&apos;m just a person who enjoys coding and designing. used to
-                work with python and arduino stuffs, but realized that web
-                development is more fun and interesting. i am currently learning
-                react and next.js, and i am planning to learn more about
-                backend, docker, and more languages in the future.
+                I have a passion for coding and design, having previously worked
+                with Python and Arduino projects. however, I discovered that web
+                development fits me more. currently, I am expanding my skill set
+                by learning React and Next.js, with plans to get into backend
+                development, Docker, and additional programming languages in the
+                future.
                 <br />
                 <br />
-                i enjoy building websites and designing. my projects mainly
-                focus on using free public APIs and presenting them in my own
-                style.
+                I enjoyed building websites and creating cool designs. my
+                projects primarily focus on utilizing free public APIs, which I
+                present in my own distinctive style.
                 <br />
-                <br />
-                check the showcase page for cool things i&apos;ve created, and
-                check out the blog for some lighthearted rants & stories
-                i&apos;ve shared. and i&apos;m not a professional writer and
-                will most of the time struggle on making cool and addictive
-                stories so i&apos;ll mostly keep things brief to avoid losing
-                your interest.
+                <br />I invite you to explore my showcase page to view some of
+                the exciting projects I&apos;ve created. additionally, feel free
+                to visit my blog (which is incomplete for now), where I share
+                stories about my projects and other topics.
               </p>
             </div>
           </div>
